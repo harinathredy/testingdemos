@@ -49,7 +49,7 @@ public class TestAngApp {
 		
 	}
 
-	private static void addProductToShoppingCart(WebDriver webdriver,String route,String productname, String quantity) {
+	private static void addProductToShoppingCartXPath(WebDriver webdriver,String route,String productname, String quantity) {
 		webdriver.get(url + "/" +route);
 		webdriver.findElement(By.name("productName")).sendKeys(productname);
 		webdriver.findElement(By.name("quantity")).sendKeys(quantity);
